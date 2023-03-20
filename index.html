@@ -1,82 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>نظام ادارة المنتجات</title>
-        <link rel="stylesheet"href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Documen</title>
+</head>
+<body>
+  
+    <header>
 
-    </head>
-    <body>
-<div class="crude">
-    <div class="head">
-<h2>crude</h2>
-  <p>
-نظام إدارة المنتجات </p>
-    </div>
-    <div class="inputs">
+        <h2><a href="#" class="logo">AL kafeel Museum</a></h2>
+        <ul>
+<li><a href="#" class="active">Home</a></li>
+<li><a href="#">product</a></li>
+<li><a href="#">shop</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <section class="main">
 
+        <img src="image/stars1.png.webp" id="stars">
+        <h2 class="ALkafeel">ALkafeel</h2>
+        <img src="image/moon2.png.webp" id="moon">
+        <img src="image/mountains3.png.webp" id="mountains3">
+        <img src="image/mountains4.png.webp" id="mountains4">
+        <img src="image/river5.png.webp" id="river">
+        <img src="image/boat6.png.webp" id="boat6">
+        <img src="image/mountains7.png.webp" id="mountains7">
+    </section>
+    <div class="content">
 
-    <input placeholder="title" type="text" id="title">
-    <div class="price">
-        <input onkeyup="getTotal('')" type="number" id="price" placeholder="price">
-        <input onkeyup="getTotal('')" type="number" id="taxes" placeholder="taxes">
-        <input onkeyup="getTotal('')" type="number" id="ads" placeholder="ads">
-        <input onkeyup="getTotal('')" type="number" id="discount" placeholder="discount">
-        <small id="total">3333</small>
+        <h2>متحف الكفيل للنفائس والمخطوطات</h2>
+        <p>من هنا أصبحت المتاحف من أهم الاعمدة الأساسية في موضوعة إحياء التراث ان لم يكن أولها ؛ بوصفها مراكز ومؤسسات ثقافية تعليمية اجتماعية تعنى بحماية وصيانة وعرض المقتنيات المتحفية بطرق وأساليب علمية ودراستها بشكل منهجي لتسهم في صناعة الثقافة المتحفية وتنميتها لاثراء الجوانب المعرفية والحضارية للمجتمع ، وبالتالي نجد بان أغلب المتاحف بشكل عام ومتحف الكفيل للنفائس والمخطوطات بشكل خاص ، قد شرع بتأسيس استراتيجياته الفكرية والمعرفية والفنية منذ أولى خطواته المباركة ، مابعد عام 2003 عندما شرعت العتبة العباسية المقدسة بوضع الخطوة الأولى للمتحف المتمثلة بافتتاح قاعة للعرض المتحفي في الخامس من شهر جمادى الأولى 1431هـ . 2009 مـ ، ذكرى ولادة السيدة الحوراء زينب الكبرى (عليها السلام) . وفيما بعد تم تأسيس قسم المتحف للنفائس والمخطوطات في 2014مـ ويضم العديد من الشعب والوحدات ، اذ ضم ستة شعب خاصة بالشأن المتحفي ( المكتب ، المخزن ، التوثيق والارشفة ،القاعة المتحفية ،المختبر،الاعلام</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi, maiores aliquam laudantium nam quaerat soluta eum sit fugit! Laudantium commodi necessitatibus voluptatibus dolorem facilis id nemo aspernatur error maiores?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eveniet facere deserunt debitis! Quidem beatae nam magnam illum quis facere, similique modi. Suscipit tenetur earum recusandae assumenda optio quo quas, veniam architecto nam exercitationem vero eius delectus eos tempora molestias facilis debitis, consequuntur tempore. Reprehenderit cum magni eos nesciunt consequatur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non magnam fugit, totam soluta rem possimus ipsum ex laudantium voluptatum molestiae numquam, quasi inventore quis qui explicabo. Assumenda sunt tempora quam. Reprehenderit totam ut eaque dignissimos iusto eum soluta culpa veniam accusantium dolorum quam qui quidem molestias autem, praesentium rerum sapiente esse, modi aspernatur cumque beatae dolorem at. Deleniti atque mollitia facilis illum voluptas recusandae natus! Voluptatibus quisquam atque, quas facilis placeat quaerat obcaecati aut quibusdam debitis adipisci, inventore sint quis.</p>
+           </div>
+        
 
-        </div>
-        <input placeholder="count" type="number" id="count">
-        <input placeholder="category" type="text" id="category">
-        <button id="submit">create</button>
-    </div>
-    <div class="outputs">
-<div class="searhBlock">
-<input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
-<div class="btnSearch">
-<button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
-<button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
-
-</div>
-
-
-
-</div>
-<div id="deleteAll">
-
-
-
-</div>
-
-<table>
-
-
-    <tr>
-<th>id</th>
-<th>title</th>
-<th>price</th>
-<th>taxes</th>
-<th>ads</th>
-<th>discount</th>
-<th>total</th>
-<th>category</th>
-<th>update</th>
-<th>delete</th>
-
-
-
-    </tr>
-    <tbody id="tbody">
-
-
-    </tbody>
-</table>
-
-
-    </div>
-
-</div>
-
-
-        <script src="script.js"></script>
-    </body>
-    </html>
+    <script src="script.js"></script>
+</body>
+</html>
